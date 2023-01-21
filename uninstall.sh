@@ -1,7 +1,7 @@
 #!/bin/bash
 
 C=$ANDROID_BUILD_TOP
-D="frameworks/base packages/modules/Bluetooth"
+D="frameworks/base hardware/interfaces packages/modules/Bluetooth"
 
 clear_patches() { cd ${C}/${1}; git checkout -- . && git clean -df; cd ${C}; }
 
